@@ -76,7 +76,6 @@ namespace habilitations.vue
             if (!txtPwd.Text.Equals("") && txtPwd.Text.Equals(txtPwd2.Text)) {
                 Developpeur developpeur = dataGridView1.SelectedRows[0].DataBoundItem as Developpeur;
                 developpeur.Pwd = txtPwd.Text;
-                txtLastName.Text = developpeur.Id.ToString();
                 controleur.UpdatePwd(developpeur);
                 txtPwd.Text = "";
                 txtPwd2.Text = "";
@@ -119,6 +118,7 @@ namespace habilitations.vue
             txtMail.Text = "";
             txtName.Text = "";
             txtPhone.Text = "";
+            cmbBoxProfil.SelectedItem = null;
         }
 
         /// <summary>

@@ -54,5 +54,20 @@ namespace habilitations.vue
                 }
             }
         }
+
+        private void txtName_TextChanged(object sender, EventArgs e)
+        {
+            this.AcceptButton = btnConnect;
+        }
+
+        private void txtLastName_TextChanged(object sender, EventArgs e)
+        {
+            this.AcceptButton = btnConnect;
+        }
+
+        private void txtPwd_TextChanged(object sender, EventArgs e)
+        {
+            this.AcceptButton = btnConnect;
+        }
     }
 }

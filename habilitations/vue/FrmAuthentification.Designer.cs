@@ -55,6 +55,7 @@ namespace habilitations.vue
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(208, 20);
             this.txtName.TabIndex = 1;
+            this.txtName.TextChanged += new System.EventHandler(this.txtName_TextChanged);
             // 
             // txtLastName
             // 
@@ -62,6 +63,7 @@ namespace habilitations.vue
             this.txtLastName.Name = "txtLastName";
             this.txtLastName.Size = new System.Drawing.Size(208, 20);
             this.txtLastName.TabIndex = 2;
+            this.txtLastName.TextChanged += new System.EventHandler(this.txtLastName_TextChanged);
             // 
             // lblLastName
             // 
@@ -88,6 +90,7 @@ namespace habilitations.vue
             this.txtPwd.Size = new System.Drawing.Size(208, 20);
             this.txtPwd.TabIndex = 4;
             this.txtPwd.UseSystemPasswordChar = true;
+            this.txtPwd.TextChanged += new System.EventHandler(this.txtPwd_TextChanged);
             // 
             // lblTitre
             // 
